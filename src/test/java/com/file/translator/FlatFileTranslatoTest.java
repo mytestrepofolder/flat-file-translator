@@ -1,4 +1,4 @@
-package com.asset.control.file.traslator;
+package com.file.translator;
 
 import static org.junit.Assert.assertEquals;
 
