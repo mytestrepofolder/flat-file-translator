@@ -1,4 +1,4 @@
-package com.asset.control.file.traslator;
+package com.file.translator;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
