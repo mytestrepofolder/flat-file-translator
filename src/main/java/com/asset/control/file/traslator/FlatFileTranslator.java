@@ -21,10 +21,10 @@ import java.util.stream.Stream;
  */
 public class FlatFileTranslator {
 
-	// All three files are read from the folder: /src/main/resource folder
-	private static final String VENDOR_FILE = "\\src\\main\\resources\\vendor.txt";
-	private static final String COL_MAPPING = "\\src\\main\\resources\\columnMapping.txt";
-	private static final String ID_MAPPING = "\\src\\main\\resources\\idMpping.txt";
+	// All three files are read from the folder: "files"
+	private static final String VENDOR_FILE = "\\files\\vendor.txt";
+	private static final String COL_MAPPING = "\\files\\columnMapping.txt";
+	private static final String ID_MAPPING = "\\files\\idMpping.txt";
 
 	public static void main(String[] args) {
 		localFileRead();
