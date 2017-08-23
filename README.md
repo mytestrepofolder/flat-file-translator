@@ -9,7 +9,7 @@ Tools Used:
 
 
 Solution Outline:.
-1)  This is simple Java Stand alone app which reads the a vendor flat file and two mapping files (TXT) 	and	creates an output (Console)) based on the mapping file. 
+1)  This is simple Java Stand alone app which reads three tab-seperated flat text files (One Vender file and two mapping files) and creates an output on the consle (Console) based on values in the mapping files. 
 2)	The Vendor fle is in the following format : 
 	
 	COL0 COL1 COL2 COL3	
@@ -50,7 +50,8 @@ Using Command Prompt :
 2)	Extract the content into a directory on your machine. This should create a directory named 'flat-file-translator'
 3)	Change directory to path where Jar is located at ‘root_dir’/flat-file-translator` cd $root_dir/ flat-file-translator
 4)	Execute following maven command to create an executable jar `mvn clean package`. This command will 	create a jar with name ‘flat-file-translator-0.0.1-SNAPSHOT.jar in $root_dir/flat-file-translator/target directory
-5)	Finally, cd to target directory and copy the directory src/main/resources where all the three files (vendor.txt, idMpping.txt and columnMapping.txt) exists to the folder where the JAR is present/exeucted (You can also create this folder structure and place these three files in there). 
+5)	Finally, cd to target directory and copy the directory src/main/resources where all the three files (vendor.txt, idMpping.txt and columnMapping.txt) exists to the folder where the JAR is present/exeucted 
+	(You can also create this folder structure and place these three files in there). 
 6)	Execute the jar using this command 	`java -jar flat-file-translator-0.0.1-SNAPSHOT.jar `
 
 
