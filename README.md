@@ -50,8 +50,8 @@ Using Command Prompt :
 2)	Extract the content into a directory on your machine. This should create a directory named 'flat-file-translator'
 3)	Change directory to path where Jar is located at ‘root_dir’/flat-file-translator` cd $root_dir/ flat-file-translator
 4)	Execute following maven command to create an executable jar `mvn clean package`. This command will 	create a jar with name ‘flat-file-translator-0.0.1-SNAPSHOT.jar in $root_dir/flat-file-translator/target directory
-5)	Finally, cd to target directory and copy the directory src/main/resources where all the three files (vendor.txt, idMpping.txt and columnMapping.txt) exists to the folder where the JAR is present/exeucted 
-	(You can also create this folder structure and place these three files in there). 
+5)	Finally, cd to target directory or copy over the JAR to the dir where you want to execute it. Copy the directory "/files" where all the three files (vendor.txt, idMpping.txt and columnMapping.txt) exists to the folder where
+	the JAR is present/exeucted or the program wont run.(You can also create this folder and place these three files in there). 
 6)	Execute the jar using this command 	`java -jar flat-file-translator-0.0.1-SNAPSHOT.jar `
 
 
