@@ -31,9 +31,10 @@ Solution Outline:.
 	OURID OURCOL1 OURCOL3
 	OURIDXXX VAL21 VAL23
 	
-6)	The app readers the column header list first and based on the headers filters out all the row values 	for the missing column(if any) based on the vendor file. 
-7)	It also compares the ID;s in the vendror file with the ones in the ID mapping file and replaces all 	the vendor ID;s. Then it stores this result in a reqColList
-8)	It then passes this list to rowMapping() which reads the ID mapping file and filters out all the rows 	which not available in the mapping file 
+6)	The app readers the column header list first and based on the headers filters out all the row values for the missing column(if any) based on the vendor file. 
+7)	It also compares the ID;s in the vendror file with the ones in the ID mapping file and replaces all the vendor ID;s. Then it stores this result in a reqColList
+8)	It then passes this list to rowMapping() which reads the ID mapping file and filters out all the rows which not available in the mapping file 
+9)	The ID Mapping and Column mapping (except the first Coloumn Header Row )file can be altered and the out file will be created based on the changes made to these two files. 
 9)	For JAR dependencies I have used Maven.
 10)	I have used Maven Shade plugin to  package the artifacts in an uber-jar, including its dependencies.
 
@@ -60,7 +61,7 @@ o	If you are running the same from Eclipse then follow these steps to build and 
 o	Install Maven plugin in your Eclipse if not there already.
 o	Import the project as an Existing Maven Project
 o	Build using Project -> Build Project
-o	Then right click on the project -> Run As -> Maven Build. This will pop up the Run Configuration 	Screen.
+o	Then right click on the project -> Run As -> Maven Build. This will pop up the Run Configuration Screen.
 o	Enter In Goals: clean install
 o	Click on Run to package into a Jar.
 
